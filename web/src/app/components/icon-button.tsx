@@ -1,11 +1,11 @@
-import type { ComponentProps, ReactNode } from "react"
+import type { ComponentProps } from "react";
 
 interface IconButtonProps extends ComponentProps<"button"> {}
 
-export function IconButton(props: IconButtonProps){ 
-  return (
-    <button 
-      className="
+export function IconButton(props: IconButtonProps) {
+	return (
+		<button
+			className="
         p-1.5
         h-12
         bg-gray-500
@@ -17,7 +17,7 @@ export function IconButton(props: IconButtonProps){
         transition-colors
         duration-300
       "
-      {...props}
-    />
-  )
+			{...props}
+		/>
+	);
 }
