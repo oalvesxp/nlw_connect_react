@@ -1,13 +1,10 @@
-import type { ReactNode } from "react"
+import type { ComponentProps, ReactNode } from "react"
 
-interface IconButtonProps {
-  children: ReactNode
-}
+interface IconButtonProps extends ComponentProps<'button'> {}
 
 export function IconButton(props: IconButtonProps){ 
   return (
     <button 
-      type='button' 
       className="
         p-1.5
         h-12
@@ -19,8 +16,8 @@ export function IconButton(props: IconButtonProps){
         hover:text-gray-900
         transition-colors
         duration-300
-      ">
-      {props.children}
-    </button>
+      "
+      {...props}
+    />
   )
 }

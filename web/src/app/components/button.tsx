@@ -1,13 +1,10 @@
-import type { ReactNode } from "react"
+import type { ComponentProps, ReactNode } from "react"
 
-interface ButtonProps {
-  children: ReactNode
-}
+interface ButtonProps extends ComponentProps<'button'> {}
 
 export function Button(props: ButtonProps){ 
   return (
-    <button 
-      type='button' 
+    <button
       className="
         flex
         justify-between
@@ -24,8 +21,8 @@ export function Button(props: ButtonProps){
         hover:text-gray-900
         transition-colors
         duration-300
-      ">
-      {props.children}
-    </button>
+      "
+      {...props}
+    />
   )
 }
