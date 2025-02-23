@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-@theme {  
+@theme {
+  --color-*: initial; /** removing colors default configs from tailwind */
+
   --color-blue: #6F9DE2;
   --color-purple: #9871F3;
   --color-danger: #F05D6C;
@@ -17,4 +19,6 @@
 
   --font-heading: var(--font-oxanium);
   --font-sans: var(--font-montserrat);
+
+  --radius-xl: 0.625rem; /** 10px */
 }
