@@ -1,4 +1,5 @@
 {
+	"editor.formatOnSave": true,
 	"[javascript]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
@@ -9,7 +10,6 @@
 		"editor.defaultFormatter": "biomejs.biome"
 	},
   "editor.codeActionsOnSave": {
-    "quick.biome": "explicit",
 		"source.organizeImports.biome": "explicit"
   },
 }
